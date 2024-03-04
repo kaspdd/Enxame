@@ -1,0 +1,32 @@
+/* #region global */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/Poppins-Light.otf');
+}
+
+*{
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    /* o box-sizing serve para: as caixas sempre serao ajustadas pela borda, ou seja, a borda e a base de redimencionamento  */
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    /* evitar que apareca uma linha em volta das box (div, etc) */
+    outline: none;
+}
+
+/* sizes */
+:root{
+    --super-hero:5rem;
+    --title-defaut:3rem;
+    --subtitle-defaut:2rem;
+    --table-title:1.5em;
+    --paragraph-defaut:1.2em;
+    --anchor-defaut:1em;
+}
+
+
+
+/* #endregion */
