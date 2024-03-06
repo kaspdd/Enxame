@@ -22,11 +22,123 @@
     --super-hero:5rem;
     --title-defaut:3rem;
     --subtitle-defaut:2rem;
-    --table-title:1.5em;
-    --paragraph-defaut:1.2em;
-    --anchor-defaut:1em;
+    --table-title:1.8em;
+    --paragraph-defaut:1.5em;
+    --anchor-defaut:1.2em;
 }
 
+/* colors */
+:root{
+    --color-defaut: #11101d;
+    --color-primary:deepskyblue;
+    --color-segundary:aliceblue;
+    --color-tertiary:black;
+    --color-base:blue;
+    --color-detail:navy;
+    --color-table:rgb(97,97,237);
+    --color-text-box:rgba(255,255,255,.8);
+    --color-text-box-focus:rgba(255,255,255,1);
+    --color-bg-footer:#03020b;
+    --color-card:rgba(0,0,0,.5);
+    --color-btn:rgba(0,0,255,.5);
+    --color-btn-hover:transparent;
+}
 
+/* resources */
+:root{
+    font-size: 18px;
+    /* overflow:hidden server para trvar o scrool do mouse, ele nao funcionara */
+    overflow: hidden;
+    /* scroll-behavior serve para suavizar a transicao entre as sections */
+    scroll-behavior: smooth;
+    color: var(--color-segundary);
+}
+
+/* body */
+body{
+    font-size: 16px;
+    background-color: var(--color-defaut);
+}
+
+section{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-size: var(--title-defaut);
+}
+
+h2{
+    font-size: var(--subtitle-defaut);
+}
+
+p{
+    font-size: var(--paragraph-defaut);
+}
+
+a{
+    font-size: var(--anchor-defaut);
+    color: var(--color-segundary);
+    transition: .5s;
+}
+
+:hover{
+    transition: .5s;
+}
 
 /* #endregion */
+
+/* #region header */
+/* menu hamburguer */
+
+.btnMenu{
+    font-size: var(--title-defaut);
+    padding: .5em;
+    transition: .5s;
+    /* dispaly:none faz sumir o objeto */
+    display: none;
+}
+
+.btnMenu:hover i{
+    color: var(--color-primary);
+    transition: .5s;
+}
+
+.menu{
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--color-card);
+    position: fixed;
+    /* z-index serve para determinar em qual camada o elemente se encontrara, se colocar outro elemento com valor 99, ele ficara atras desse que vale 100 */
+    z-index: 100;
+    /* backdrop-filter: blur(5px) efeito desfocado */
+    backdrop-filter: blur(5px);
+}
+
+.logo{
+    width: 10%;
+    /* sempre que nao tiver line height e vc querer colocar o elemento centralizado na vertica, coloca o line-height no mesmo valor do height */
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo i{
+    font-size: var(--title-defaut);
+}
+
+.logo span{
+    font-size: var(--paragraph-defaut);
+    padding-left: 1rem;
+    font-weight: 800;
+}
+
+/* #endregion */
+
+/* #region */
+/* #endregion */
+
+
