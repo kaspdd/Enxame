@@ -136,6 +136,76 @@ a{
     font-weight: 800;
 }
 
+.navbar{
+    height: 3.5rem;
+    position: absolute;
+    /* top 0 e right 1rem jogou a navbar para o outro lado da div */
+    top: 0;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar li{
+    padding: 0 .5em;
+}
+
+.navbar li a {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    padding: .6rem 1.2rem;
+    border: 1px solid var(--color-btn-hover);
+    border-radius: 5px;
+}
+/* "not()" serve para dar uma excessao para o elemento ou classe selecionada */
+.navbar li a:hover:not(.sub a:hover){
+    background-color: var(--color-btn-hover);
+    border: 1px solid var(--color-primary);
+
+}
+
+.navbar button{
+    padding: .6rem 1.2rem;
+    cursor: pointer;
+    margin-left: .5rem;
+    background-color: var(--color-btn);
+    border: 1px solid var(--color-btn);
+    border-radius: 5px;
+    /* text-transform: uppercase para deixar a letra maiuscula */
+    text-transform: uppercase;
+    /* letter-spacing: 2px de espaco entre as letras */
+    letter-spacing: 2px;
+    transition: .5s;
+}
+
+.navbar button:hover{
+    border: 1px solid var(--color-primary);
+    transition: .5s;
+    background-color: var(--color-btn-hover);
+}
+/* nao tem "." antes da "ul", pois e um elemento, somente antes de classe que tem ponto. */
+ul.sub{
+    position:absolute;
+    width: 9.8rem;
+    /* define o minimo que o objeto tera de largura, isso indepedente do monitor usado */
+    min-width: 8.8rem;
+    background-color: var(--color-card);
+    text-align: center;
+}
+
+ul.sub li{
+    transition: .5s;
+    border: 1px solid var(--color-btn-hover);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul.sub li:hover{
+    background-color: var(--color-btn-hover);
+    border: 1px solid var(--color-primary);
+}
+
+
 /* #endregion */
 
 /* #region */
