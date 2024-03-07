@@ -90,6 +90,7 @@ a{
 /* #endregion */
 
 /* #region header */
+
 /* menu hamburguer */
 
 .btnMenu{
@@ -191,6 +192,7 @@ ul.sub{
     min-width: 8.8rem;
     background-color: var(--color-card);
     text-align: center;
+    display: none;
 }
 
 ul.sub li{
@@ -198,6 +200,7 @@ ul.sub li{
     border: 1px solid var(--color-btn-hover);
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 ul.sub li:hover{
@@ -209,7 +212,111 @@ ul.sub li:hover{
 
 /* #endregion */
 
+/* #region home*/
+
+.homeContainer {
+    /* quando colocado position relative, os objetos position absolute ficaram como filho do relative, ou seja a posicao dependera do relative */
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+}
+
+.homeInner{
+    position: absolute;
+    background-color: var(--color-card);
+    display: flex;
+    /* flex-direction: column; serve para mudar a forma que os elementos serao enquadrados, nesse caso sera em coluna (um em cima do outro) */
+    flex-direction: column;
+    /* ao usar o z-index precisa tambem colocar as propriedades de tamanho do elemento para que ele apareca na tela */
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    top: 0;
+    text-align: center;
+
+}
+
+.homeInner h1{
+    font-size: var(--super-hero);
+    font-weight: 200;
+}
+
+.btnDefault{
+    border: 1px solid var(--color-btn);
+    border-radius: 5px;
+    background-color: var(--color-btn);
+    padding: 1.2em 2.5em;
+    margin: 2em auto;
+    transition: .5s;
+}
+
+.btnDefault:hover{
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-btn-hover);
+}
+
+/* #endregion */
+
+/* #region domain*/
+
+#domain{
+    height: 100vh;
+    padding: 4rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#domain h2{
+    font-size: var(--title-defaut);
+}
+
+.domainContainer{
+    width: 100%;
+    text-align: center;
+}
+
+.domainContainer ul li input[type=text]{
+    margin: 6em 0 ;
+    padding: 1em 1em;
+    width: 50%;
+    border: 1px solid var(--color-btn-hover);
+    border-radius: 5px;
+}
+
+/* #endregion */
+
+/* #region localization*/
+
+#localization {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#localization h2{
+    font-size: var(--title-defaut);
+    padding: 4rem;
+}
+
+iframe{
+    filter: invert(100%);
+}
+
+/* #endregion */
+
 /* #region */
 /* #endregion */
+
+
 
 
