@@ -85,9 +85,25 @@
             <section id="about">
 
             </section>
-
+            <!-- emphasis -->
             <section id="emphasis">
-
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/carousel1.png" alt="carousel" class="imgFit">
+                        </div>
+                        <div class="swiper-slide"><img src="img/carousel2.png" alt="carousel" class="imgFit">
+                        </div>
+                        <div class="swiper-slide"><img src="img/carousel3.png" alt="carousel" class="imgFit">
+                        </div>
+                        <div class="swiper-slide"><img src="img/carousel4.png" alt="carousel" class="imgFit">
+                        </div>
+                        <div class="swiper-slide"><img src="img/carousel5.png" alt="carousel" class="imgFit">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </section>
 
             <section id="products">
@@ -189,14 +205,66 @@
             </section>
             <!-- localization -->
             <section id="localization">
-                <h2>Try to find on the map</h2>
+                <h2>Try to find <span>on </span> the map<span> ;)</span></h2>
                 <div class="localizationContainer">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0530511287934!2d-46.69613332375863!3d-23.602430263104104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce573410c29b2f%3A0xb2368424ec13d7ee!2sEngineering%20Brasil%20-%20Matriz%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1709772562349!5m2!1spt-BR!2sbr" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0530511287934!2d-46.69613332375863!3d-23.602430263104104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce573410c29b2f%3A0xb2368424ec13d7ee!2sEngineering%20Brasil%20-%20Matriz%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1709772562349!5m2!1spt-BR!2sbr"
+                        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
-
+            <!-- Contact -->
             <section id="contact">
-
+                <h2>Send a menssage <span>and</span> maybe we'll answer on day</h2>
+                <contactContainer></contactContainer>
+                <form action="#" method="post">
+                    <ul class="contactInner">
+                        <li>
+                            <input type="text" name="name" aria-placeholder="Nome:" autocomplete="off" required>
+                        </li>
+                        <li>
+                            <input type="email" name="email" aria-placeholder="Email:" autocomplete="off" required>
+                        </li>
+                        <li>
+                            <textarea name="message" placeholder="Send your message:" cols="30" rows="10"
+                                required></textarea>
+                        </li>
+                        <li class="formBtn">
+                            <input type="submit" value="Submit" class="btnDefault">
+                            <input type="reset" value="Cancelar" class="btnDefault">
+                        </li>
+                        <li>
+                            <input type="checkbox" name="" id="">
+                            <span>I want to recive junk in my email account</span>
+                        </li>
+                    </ul>
+                    <input type="hidden" name="accessKey" value="myAccessKey">
+                    <input type="hidden" name="redirectTo" value="urlThanks">
+                </form>
+                <!-- footer -->
+                <footer>
+                    <div class="footerContainer">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#emphasis">Emphasis</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#services">Services</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#domain">Domain</a></li>
+                            <li><a href="#localization">Localization</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="login.html">Login</a></li>
+                        </ul>
+                        <!-- logo -->
+                        <a href="#home" class="logo">
+                            <i class='bx bxs-happy-heart-eyes bx-tada'></i>
+                            <span>Enxame</span>
+                        </a>
+                        <h5>&copy; Copyright all rights reserved 2012 powered by KaSpD</h5>
+                    </div>
+                </footer>
             </section>
         </main>
     </div>

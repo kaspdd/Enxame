@@ -35,7 +35,7 @@
     --color-tertiary:black;
     --color-base:blue;
     --color-detail:navy;
-    --color-table:rgb(97,97,237);
+    --color-table:rgba(40, 40, 255, 0.199);
     --color-text-box:rgba(255,255,255,.8);
     --color-text-box-focus:rgba(255,255,255,1);
     --color-bg-footer:#03020b;
@@ -76,6 +76,7 @@ h2{
 p{
     font-size: var(--paragraph-defaut);
 }
+
 
 a{
     font-size: var(--anchor-defaut);
@@ -264,6 +265,91 @@ video{
 
 /* #endregion */
 
+/* #region emphasis*/
+
+.imgFit{
+    width: 100vw;
+    height: 100vh;
+    padding: 0 6em;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: var(--color-primary) !important;
+}
+ 
+.swiper-button-prev {
+    color: var(--color-base) !important;
+ 
+}
+ 
+.swiper-button-next {
+    color: var(--color-base) !important;
+}
+/* #endregion */
+
+
+/* #region services */
+
+#services{
+    text-align: center;
+    /* height: 100vh; */
+    padding: 5em;
+}
+
+#services h2{
+    font-size: var(--title-defaut);
+    padding: 1em 0;
+}
+
+.servicesContainer{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.servicesInner{
+    width: 100%;
+}
+
+.servicesInner table{
+    width: 100%;
+    padding: 2.5em;
+    /* border-collapse: collapse; serve para tirar o espacamento entre as celulas, ou seja, ficaram todas juntas sem o espaco */
+    border-collapse: collapse;
+}
+
+.servicesInner table th{
+    font-size: var(--table-title);
+    padding: .8em 0;
+    border-bottom: 2px solid var(--color-segundary);
+}
+
+.servicesInner table td{
+    padding: .8em 0;
+}
+
+.servicesInner table td a{
+    height: 1.5em;
+    line-height: 1.5em;
+    padding: .1em 2.3em;
+    background-color: var(--color-btn-hover);
+    border: none;
+}
+
+/* zebrando a tabela */
+
+/* linhas impares */
+.tabela tbody tr:nth-child(even){
+    background-color: var(--color-table);
+}
+
+/* linhas pares */
+.tabela tbody tr:nth-child(odd){
+
+}
+
+/* #endregion */
+
 /* #region domain*/
 
 #domain{
@@ -298,7 +384,7 @@ video{
 /* #region localization*/
 
 #localization {
-    text-align: center;
+    text-align: center; 
     width: 100%;
     height: 100vh;
 }
@@ -306,6 +392,11 @@ video{
 #localization h2{
     font-size: var(--title-defaut);
     padding: 4rem;
+}
+
+#localization span{
+    color: var(--color-primary);
+    font-size: var(--title-defaut);
 }
 
 iframe{
