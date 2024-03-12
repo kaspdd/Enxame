@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- my style -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+   <!-- BoxIcons -->
+   <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+   <!-- Swiper -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Aos -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+   <!-- favIcon -->
+   <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <!-- cabecalho, onde ficara o menu -->
+        <header>
+            <!-- elementos de navegacao -->
+            <nav>
+                <div class="menu">
+                    <!-- logo -->
+                    <a href="#home" class="logo">
+                        <i class='bx bxs-happy-heart-eyes bx-tada'></i>
+                        <span>Enxame</span>
+                    </a>
+                    <!-- menu -->
+                    <ul class="navbar">
+                        <!-- menu hamburguer -->
+                        <a class="btnMenu">
+                            <i class='bx bx-menu'></i>
+                        </a>
+                        <li>
+                            <a href="index.html#home">home</a>
+                        </li>
+                        <li>
+                            <a href="index.html#about">about</a>
+                        </li>
+                        <!-- dropdown -->
+                        <li>
+                            <a href="">spacialties
+                                <i class='bx bx-chevron-down'></i>
+                            </a>
+                            <ul class="sub">
+                                <li><a href="index.html#emphasis">emphasis</a></li>
+                                <li><a href="index.html#products">products</a></li>
+                                <li><a href="index.html#services">services</a></li>
+                                <li><a href="index.html#domain">domain</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="index.html#localization">localization</a>
+                        </li>
+                        <li>
+                            <a href="index.html#contact">contact</a>
+                        </li>
+                        </button>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Login -->
+        <section id="login">
+            <h2>Login</h2>
+            <contactContainer></contactContainer>
+            <form action="#" method="post">
+                <ul class="loginInner">
+                    <li>
+                        <input type="email" name="email" placeholder="Email:" autocomplete="off" required>
+                    </li>
+                    <li>
+                        <input type="password" name="senha:" placeholder="Senha:" autocomplete="off" required>
+                    </li>
+                    <li class="formBtn">
+                        <input type="submit" value="Logar" class="btnDefault">
+                        <input type="reset" value="Cancelar" class="btnDefault">
+                    </li>
+                </ul>
+                <input type="hidden" name="accessKey" value="myAccessKey">
+                <input type="hidden" name="redirectTo" value="urlThanks">
+            </form>
+            <!-- footer -->
+            <footer>
+                <div class="footerContainer">
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#emphasis">Emphasis</a></li>
+                        <li><a href="index.html#products">Products</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="index.html#domain">Domain</a></li>
+                        <li><a href="index.html#localization">Localization</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                    <!-- logo -->
+                    <a href="index.html#home" class="logo">
+                        <i class='bx bxs-happy-heart-eyes bx-tada'></i>
+                        <span>Enxame</span>
+                    </a>
+                    <h5>&copy; Copyright all rights reserved 2012 powered by KaSpD</h5>
+                </div>
+            </footer>
+        </section>
+    </div>
+
+    <!-- scripts -->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- boxIcons -->
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<!-- Aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- myScript -->
+<script src="script/script.js"></script>
+</body>
+</html>

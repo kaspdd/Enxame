@@ -42,6 +42,7 @@
     --color-card:rgba(0,0,0,.5);
     --color-btn:rgba(0,0,255,.5);
     --color-btn-hover:transparent;
+    --color-detail6:rgba(104, 104, 243, 0.13);
 }
 
 /* resources */
@@ -287,6 +288,102 @@ video{
 }
 /* #endregion */
 
+/* #region products */
+
+#products{
+    text-align: center;
+    padding: 10em 0;
+
+}
+
+#products h2{
+    font-size: var(--title-defaut);
+}
+
+#products span{
+    font-size: var(--title-defaut);
+    color: var(--color-primary);
+}
+
+.productsContainer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5em 0;
+}
+
+.cardProd{
+    width: 20%;
+}
+
+.cardProd a{
+    border-collapse: 1em;
+}
+
+.cardProd li{
+    height: 4em;
+    line-height: 4em;
+    background-color: var(--color-segundary);
+    color: var(--color-tertiary); 
+}
+
+/* o "last-child serve para setar o ultimo elemento selecionado, no caso foi o "li" */
+.cardProd li:last-child{
+    height: 6em;
+    padding-top: 1em;
+    border-radius: 0 0 .8em .8em;
+    background-color: var(--color-detail6);
+}
+
+.cardProd li.price{
+    width: 6em;
+    height: 6em;
+    line-height: 6em;
+    background-color: var(--color-detail);
+    color: var(--color-segundary);
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: -3em;
+    font-size: var(--anchor-defaut);
+    position: relative;
+    
+}
+
+.cardProd li.title{
+    background-color: var(--color-detail6);
+    height: 7em;
+    line-height: 7em;
+    padding-top: 1.2em;
+    text-transform: uppercase;
+    color: var(--color-segundary);
+    font-weight: 800;
+    font-size: var(--paragraph-defaut);
+    border-radius: .8em .8em 0 0;
+}
+
+
+.recomended li {
+    background-color: var(--color-detail6);
+    color: var(--color-segundary);
+}
+
+.recomended li.title {
+    background-color: var(--color-detail6);
+    color: var(--color-segundary);
+}
+
+.recomended li:last-child {
+    background-color: var(--color-detail6);
+    color: var(--color-segundary);
+}
+
+.recomended li.price{
+    border: 2px solid var(--color-segundary);
+}
+
+/* #endregion */
 
 /* #region services */
 
@@ -390,8 +487,9 @@ video{
 }
 
 #localization h2{
+    padding-top: 2em;
     font-size: var(--title-defaut);
-    padding: 4rem;
+    
 }
 
 #localization span{
@@ -400,12 +498,128 @@ video{
 }
 
 iframe{
+    padding-top: 3em;
     filter: invert(100%);
 }
 
 /* #endregion */
 
-/* #region */
+/* #region contact*/
+
+#contact{
+    text-align: center;
+    padding: 8em 0;
+}
+
+#contact h2{
+    font-size: var(--title-defaut);
+}
+
+.contactContainer{
+    width: 40%;
+    margin: 0 auto;
+    /* background-color: red; */
+}
+
+.contactInner li{
+    padding: 1em;
+}
+
+.contactInner input[type=text],[type=email],.contactInner
+textarea{
+    background-color: var(--color-text-box);
+    width: 60%;
+    padding: .8em;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-tertiary);
+    transition: .5s;
+}
+
+.contactInner input[type=text]:focus,[type=email]:focus,.contactInner
+textarea{
+    background-color: var(--color-text-box-focus);
+    transition: .5s;
+}
+
+.formBtn input{
+    margin: 0 2em;
+    color: var(--color-secundary);
+    border-radius: 1em; 
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--color-bg-footer);
+    padding: 3em;
+    font-size:  .8em;
+    position: relative;
+}
+
+.footerContainer{
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.footerContainer a{
+    height: 1.5rem;
+    line-height: 1.5rem;
+    transition: .5s;
+    opacity: .6;
+}
+
+.footerContainer a:hover{
+    opacity: 1;
+    transition: .5s;
+
+}
+
+/* #endregion */
+
+/* #region login */
+
+#login{
+    width: 100%;
+    height: 85vh;
+    text-align: center;
+    padding: 10em 0;
+}
+
+#login h2{
+    font-size: var(--super-hero);
+}
+
+.loginInner li{
+    padding: 2em;
+}
+
+.loginInner input[type=email],[type=password]{
+    background-color: var(--color-text-box);
+    width: 30%;
+    padding: .8em;
+    border: none;
+    border-radius: 5px;
+    color: var(--color-tertiary);
+    transition: .5s;
+}
+
+.loginInner input[type=email]:focus,[type=password]:focus{
+    background-color: var(--color-text-box-focus);
+    transition: .5s;
+}
+
+.formBtn input{
+    margin: 0 2em;
+    color: var(--color-secundary);
+    border-radius: 1em; 
+    margin-bottom: 10em;
+}
+
 /* #endregion */
 
 
