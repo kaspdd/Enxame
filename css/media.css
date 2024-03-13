@@ -1,0 +1,71 @@
+/* 
+320px - 480px: dispositivos moveis
+481px - 768px: tablets, ipads
+769px - 1024px: telas pequenas, laptops
+1025px - 1200px: desktops
+1201px - 1600px: telas grandes
+1601px - acima: Tvs e telas especificadas
+*/
+
+/*1024 - telas pequenas e laptops*/
+@media screen and (max-width: 1024px){
+    /* logo */
+    .logo span{
+        display: none;
+    }
+
+    /* emphasis */
+    .imgFit{
+        /* width: 100vw;
+        height: 100vh; */
+        padding: 10em 4em;
+    }
+
+    /* products */
+    .productsContainer{
+        width: 80%;
+        padding: 1em 0;
+    }
+    .cardProd {
+        width: 23%;
+    }
+
+    /* services */
+    #services h2{
+        font-size: var(--title-defaut);
+        padding: 0;
+    }
+
+    #services{
+        text-align: center;
+        /* height: 100vh; */
+        padding: 6em 0;
+    }
+
+    /* domain */
+
+    #domain h2{
+        font-size: var(--subtitle-defaut);
+    }
+
+    .domainContainer ul li input[type=text]{
+        width: 65%;
+    }
+
+    /* contact */
+
+    #contact h2{
+        font-size: var(--subtitle-defaut);
+    }
+
+    #contact{
+        text-align: center;
+        padding: 5em 0;
+    }
+
+    /* footer */
+
+    footer{
+        margin-top: 0em;
+    }
+}
